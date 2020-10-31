@@ -45,13 +45,13 @@ const Footer = ({}) => {
                   
                 </Cartcontainer></CartLink>
 
-                <CartLink to='/cart'><Cartcontainer1>
+                <CartLink to='/cart'><Cartcontainer>
                   
 				      <CartCounter>
                         <p>CART</p>
 				      </CartCounter>
                   
-                </Cartcontainer1></CartLink>
+                </Cartcontainer></CartLink>
         
                 <CartLink to='/cart'><Cartcontainer2>
                   

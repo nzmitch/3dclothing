@@ -39,20 +39,6 @@ export const Cartcontainer = styled(Link)`
     position: relative;
 `
 
-export const Cartcontainer1 = styled(Link)`
-    display: inline-block;
-    vertical-align: middle;
-    background-color: #c0c0c0;
-    border-top: 1px solid #fcfcfc;
-    border-left: 1px solid #fcfcfc;
-    border-bottom: 1.1px solid #2c2c2c;
-    border-right: 1.1px solid #2c2c2c;
-    width: 5em;
-    height: 2.4em;
-    margin-left: 0.3em;
-    margin-top: 0.3em;
-    position: relative;
-`
 
 export const Cartcontainer2 = styled(Link)`
     display: inline-block;
