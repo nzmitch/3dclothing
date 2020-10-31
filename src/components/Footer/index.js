@@ -34,7 +34,7 @@ const Footer = ({}) => {
     const [hasItems, quantity] = useQuantity()
 
 	return(
-		<Wrapper>
+
 			<Container>
             
                 <CartLink to='/'><Cartcontainer>
@@ -44,14 +44,14 @@ const Footer = ({}) => {
 				      </CartCounter>
                   
                 </Cartcontainer></CartLink>
-           
-                <CartLink to='/cart'><Cartcontainer1>
+                
+                <CartLink to='/cart'><Cartcontainer>
                   
 				      <CartCounter>
                         <p>CART</p>
 				      </CartCounter>
         
-                  </Cartcontainer1></CartLink>
+                  </Cartcontainer></CartLink>
                 
                <CartLink to='/cart'> <Cartcontainer2>
                   
@@ -62,8 +62,7 @@ const Footer = ({}) => {
                </Cartcontainer2></CartLink>
                
 			</Container>
-		</Wrapper>
-        
+
         
 	)
 }
