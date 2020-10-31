@@ -64,23 +64,17 @@ export const Cartcontainer2 = styled(Link)`
     border-right: 1.1px solid #2c2c2c;
     width: 2.4em;
     height: 2.4em;
-    margin-left: 0.3em;
     margin-right: 0.3em;
     margin-top: 0.3em;
     position: relative;
 
 `
 
-
-
 export const CartLink = styled(Link)`
     text-decoration: none;
     text-align: center;
     vertical-align: middle;
-    line-height: 0.4em; 
-  
-   
-    
+    line-height: 0.4em;   
 `
 
 export const CartCounter = styled.span`
@@ -92,5 +86,3 @@ export const CartCounter = styled.span`
     cursor: pointer;
     
 `
-
-
