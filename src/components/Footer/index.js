@@ -37,23 +37,29 @@ const Footer = ({}) => {
 
 			<Container>
             
-                <CartLink to='/'><Cartcontainer>
+                <CartLink to='/'><Cartcontainer1>
                   
 				      <CartCounter>
-                        <p>Home</p>
+                        <p>HOME</p>
 				      </CartCounter>
                   
-                </Cartcontainer></CartLink>
+                </Cartcontainer1></CartLink>
                 
-                <CartLink to='/cart'><Cartcontainer>
+                <CartLink to='/cart'><Cartcontainer1>
                   
 				      <CartCounter>
-                        <p>CART ({quantity})</p>
+                        <p>CART</p>
 				      </CartCounter>
         
-                  </Cartcontainer></CartLink>
+                  </Cartcontainer1></CartLink>
                 
-     
+               <CartLink to='/cart'> <Cartcontainer2>
+                  
+				      <CartCounter>
+                        <p>({quantity})</p>
+				      </CartCounter>
+                  
+               </Cartcontainer2></CartLink>
                
 			</Container>
 
