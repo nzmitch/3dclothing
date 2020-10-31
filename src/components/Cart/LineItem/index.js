@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { Link } from 'gatsby'
 
 import StoreContext from '~/context/StoreContext'
-import { Wrapper } from './styles'
+import { Wrapper, Button } from './styles'
 
 const LineItem = props => {
     
@@ -50,8 +50,8 @@ const LineItem = props => {
       </p>
       {item.quantity}
       <p>$ {checkout.totalPrice}</p>
-      <button type="button" onClick={handleRemove}>Remove</button>
-      <button type="button"
+      <button css={Button} type="button" onClick={handleRemove}>Remove</button>
+      <button css={Button} type="button"
         onClick={handleCheckout}
         disabled={checkout.lineItems.length === 0}
       >

@@ -14,6 +14,7 @@ import {
     Ul,
     Cartcontainer,
     Cartcontainer2,
+    Cartcontainer1,
     Line,
     CartLink,
     NavCart,
@@ -44,16 +45,13 @@ const Footer = ({}) => {
                   
                 </Cartcontainer></CartLink>
 
-            
-                
-        
-                <CartLink to='/cart'><Cartcontainer>
+                <CartLink to='/cart'><Cartcontainer1>
                   
 				      <CartCounter>
                         <p>CART</p>
 				      </CartCounter>
                   
-                </Cartcontainer></CartLink>
+                </Cartcontainer1></CartLink>
         
                 <CartLink to='/cart'><Cartcontainer2>
                   
