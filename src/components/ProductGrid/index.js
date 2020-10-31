@@ -6,7 +6,8 @@ import {
   Grid,
   Product,
   Title,
-  PriceTag
+  PriceTag,
+  Container
 } from './styles'
 import { Img } from '~/utils/styles'
 
@@ -15,7 +16,7 @@ const ProductGrid = () => {
   const { allShopifyProduct } = useStaticQuery(
     graphql`
       query {
-        allShopifyProduct(filter: {tags: {glob: "aiko"}}) {
+        allShopifyProduct(filter: {tags: {glob: "3DClothing"}}) {
           edges {
             node {
               id
@@ -50,6 +51,7 @@ const ProductGrid = () => {
   }).format(parseFloat(price ? price : 0))
 
   return (
+      <Container>
     <Grid>
       {allShopifyProduct.edges
         ? allShopifyProduct.edges.map(({ node: { id, handle, title, images: [firstImage], variants: [firstVariant] } }) => (
@@ -64,9 +66,11 @@ const ProductGrid = () => {
             <Title>{title}</Title>
             <PriceTag>{getPrice(firstVariant.price)}</PriceTag>
           </Product>
+        
         ))
         : <p>No Products found!</p>}
     </Grid>
+    </Container>
   )
 }
 

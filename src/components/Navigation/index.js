@@ -39,22 +39,21 @@ const Navigation = ({ siteTitle }) => {
 		<Wrapper>
 			<Container>
                 
-				<MenuLink style={{}}  to='/'>
-				    <img css={Logo} src={"https://cdn.glitch.com/c995571b-8b75-4810-b967-1fb1b241a7c2%2Fnotypo.png?v=1597991244572"} />
-				</MenuLink>
                 
                 <Cartcontainer>
-                    <MenuLink to='/policies'>
-                        FAQ
-                    </MenuLink>
-                    <Line></Line>
                   <CartLink to='/cart'>
-                    {hasItems &&
+                 
 				      <CartCounter>
-                        {quantity}
+                        <p style={{display: 'inlineBlock'}}>CART</p>
 				      </CartCounter>
-				    }
-                     <FontAwesomeIcon icon={faShoppingCart} size="" />
+				    
+                  </CartLink>
+                  <CartLink to='/cart'>
+                    
+				      <CartCounter>
+                        <p style={{display: 'inlineBlock'}}>({quantity})</p>
+				      </CartCounter>
+				   
                   </CartLink>
                </Cartcontainer>
 			</Container>

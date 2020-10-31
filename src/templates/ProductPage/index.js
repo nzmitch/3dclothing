@@ -5,24 +5,24 @@ import SEO from '~/components/seo'
 import ProductForm from '~/components/ProductForm'
 import {
   Img,
-  Container,
-  TwoColumnGrid,
-  GridLeft,
-  GridRight,
+
 } from '~/utils/styles'
 import {
   ProductTitle,
-  ProductDescription
+  ProductDescription,
+  Container,
+    Grid,
+    Product
 } from './styles'
 
 const ProductPage = ({ data }) => {
   const product = data.shopifyProduct
   return (
-    <>
+    <div>
       <SEO title={product.title} description={product.description} />
       <Container>
-        <TwoColumnGrid>
-          <GridLeft>
+        <Grid>
+          <Product>
             {product.images.map(image => (
               <Img
                 fluid={image.localFile.childImageSharp.fluid}
@@ -30,17 +30,17 @@ const ProductPage = ({ data }) => {
                 alt={product.title}
               />
             ))}
-          </GridLeft>
-          <GridRight>
+          </Product>
+          <Product>
             <ProductTitle>{product.title}</ProductTitle>
             <ProductDescription
               dangerouslySetInnerHTML={{ __html: product.descriptionHtml }}
             />
             <ProductForm product={product} />
-          </GridRight>
-        </TwoColumnGrid>
+          </Product>
+        </Grid>
       </Container>
-    </>
+    </div>
   )
 }
 

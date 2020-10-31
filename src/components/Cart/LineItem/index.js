@@ -5,6 +5,14 @@ import StoreContext from '~/context/StoreContext'
 import { Wrapper } from './styles'
 
 const LineItem = props => {
+    
+
+  const handleCheckout = () => {
+    window.open(checkout.webUrl)
+  }
+
+
+    
   const { item } = props
   const {
     removeLineItem,
@@ -40,11 +48,17 @@ const LineItem = props => {
         {`  `}
         {item.variant.title === !'Default Title' ? item.variant.title : ''}
       </p>
-      {selectedOptions}
       {item.quantity}
+      <p>$ {checkout.totalPrice}</p>
       <button onClick={handleRemove}>Remove</button>
+      <button
+        onClick={handleCheckout}
+        disabled={checkout.lineItems.length === 0}
+      >
+        Check out
+      </button>
     </Wrapper>
   )
-}
+} 
 
 export default LineItem

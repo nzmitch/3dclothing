@@ -88,8 +88,8 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Anton`,
-          `source sans pro\:300,400,400i,700`,
+          `Roboto`,
+          `source sans pro\:300,400,400,700`,
            
         ],
         display: 'swap'

@@ -5,6 +5,7 @@ import { Global, css,  keyframes } from "@emotion/core"
 
 
 export const breakpoints = {
+  xs: 400,
   s: 576,
   m: 768,
   l: 992,
@@ -20,11 +21,8 @@ export const GlobalStyle = props => (
       body {
         margin: 0;
         background: white;
-        background-image: linear-gradient(90deg, rgba(0,0,0,.1) 1px,transparent 0);
-        background-size: 12vw 12vw;
         overflow-x: hidden;
         box-sizing: border-box;
-        height: 100%;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
@@ -32,10 +30,9 @@ export const GlobalStyle = props => (
       }
       html {
         @font-face {
-            font-family: "All";
-            src: url("/fonts/Alloy.ttf");
+     
         }
-         font-family: All;
+         font-family: Roboto;
         -ms-text-size-adjust: 100%;
         -webkit-text-size-adjust: 100%;
       }
@@ -59,25 +56,6 @@ export const Img = styled(Image)`
 export const Container = styled.div`
   margin: 0 auto;
   max-width: 1080px;
-`
-
-export const TwoColumnGrid = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 2rem 1fr;
-  grid-template-rows: 1auto;
-  grid-template-areas: "left . right";
-
-  @media (max-width: ${breakpoints.l}px){
-    display: block;
-  }
-`
-
-export const GridLeft = styled.div`
-  grid-area: left;
-`
-
-export const GridRight = styled.div`
-  grid-area: right;
 `
 
 export const MainContent = styled.main`

@@ -4,63 +4,67 @@ import PropTypes from 'prop-types'
 import { useEffect } from 'react'
 
 import StoreContext from '~/context/StoreContext'
-import { Wrapper, Container, stampWrapper, stampPath, Ul, Logo, MenuLink, Gear } from './styles'
+import {
+    Wrapper,
+    Container,
+    CartCounter, 
+	MenuLink,
+    NavTitle,
+    Logo,
+    Ul,
+    Cartcontainer,
+    Cartcontainer2,
+    Cartcontainer1,
+    CartLink,
+    NavCart,
+    windowsLogo,
+} from './styles'
+
+const useQuantity = () => {
+    const {
+        store: { checkout },
+    } = useContext(StoreContext)
+    const items = checkout ? checkout.lineItems : []
+    const total = reduce(items, (acc, item) => acc + item.quantity, 0)
+    return [total !== 0, total]
+}
 
 const Footer = ({}) => {
-        useEffect(() => {
-            ;
-            (function () {
-                var throttle = function (type, name, obj) {
-                    var obj = obj || window;
-                    var running = false;
-                    var func = function () {
-                        if (running) {
-                            return;
-                        }
-                        running = true;
-                        requestAnimationFrame(function () {
-                            obj.dispatchEvent(new CustomEvent(name));
-                            running = false;
-                        });
-                    };
-                    obj.addEventListener(type, func);
-                };
-                throttle("scroll", "optimizedScroll");
-            })();
+    const [hasItems, quantity] = useQuantity()
 
-            var gear = document.getElementById("gear");
+	return(
+		<Wrapper>
+			<Container>
+                <div>
+                <Cartcontainer>
+                  <CartLink to='/'>
+				      <CartCounter>
+                        <p>HOME</p>
+				      </CartCounter>
+                  </CartLink>
+                </Cartcontainer>
 
-            // to use the script *without* anti-jank, set the event to "scroll" and remove the anonymous function.
-
-            window.addEventListener("optimizedScroll", function () {
-                gear.style.transform = "rotate(" + window.pageYOffset + "deg)";
-            });
-        })
-
-    return (
-        <Wrapper>
-            <Container>
-                <div css={Ul}>
-                    <MenuLink to='/policies'>
-                        <p>Twitter</p>
-                    </MenuLink>
-                    <MenuLink to='/policies'>
-                        <p>Instagram</p>
-                    </MenuLink>
-                    <MenuLink to='/policies'>
-                        <p>Dribble</p>
-                    </MenuLink>
+                <Cartcontainer1>
+                  <CartLink to='/cart'>
+				      <CartCounter>
+                        <p>CART</p>
+				      </CartCounter>
+                  </CartLink>
+                </Cartcontainer1>
+        
+                <Cartcontainer2>
+                  <CartLink to='/cart'>
+				      <CartCounter>
+                        <p>({quantity})</p>
+				      </CartCounter>
+                  </CartLink>
+               </Cartcontainer2>
                 </div>
-
-                <div css={stampWrapper}>
-                        <img css={Logo} src={'https://cdn.glitch.com/c995571b-8b75-4810-b967-1fb1b241a7c2%2FnotypoGlobe.png?v=1598083837005'}/>
-                    <div css={stampPath}>
-                        <img id="gear" css={Gear} src={'https://cdn.glitch.com/c995571b-8b75-4810-b967-1fb1b241a7c2%2Ftechculture.png?v=1598401406427'}/>
-                    </div>
-                </div>
-            </Container>
-        </Wrapper>
-    )
+			</Container>
+		</Wrapper>
+        
+        
+	)
 }
 
 export default Footer
