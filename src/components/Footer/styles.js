@@ -20,8 +20,7 @@ export const Container = styled.div`
     height: 3em;
     background-color: #c0c0c0;
     box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
+   
 `
 
 export const Cartcontainer = styled(Link)`

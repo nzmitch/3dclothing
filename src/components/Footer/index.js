@@ -44,7 +44,7 @@ const Footer = ({}) => {
 				      </CartCounter>
                   
                 </Cartcontainer></CartLink>
-                <div>
+           
                 <CartLink to='/cart'><Cartcontainer1>
                   
 				      <CartCounter>
@@ -60,7 +60,7 @@ const Footer = ({}) => {
 				      </CartCounter>
                   
                </Cartcontainer2></CartLink>
-                </div>
+               
 			</Container>
 		</Wrapper>
         
