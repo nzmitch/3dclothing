@@ -70,7 +70,6 @@ export const Cartcontainer2 = styled(Link)`
 export const CartLink = styled(Link)`
     text-decoration: none;
     text-align: center;
-    vertical-align: middle;
     line-height: 0.4em;   
 `
 

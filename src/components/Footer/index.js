@@ -7,8 +7,8 @@ import StoreContext from '~/context/StoreContext'
 import {
     Wrapper,
     Container,
-    CartCounter, 
-	MenuLink,
+    CartCounter,
+    MenuLink,
     NavTitle,
     Logo,
     Ul,
@@ -33,38 +33,30 @@ const useQuantity = () => {
 const Footer = ({}) => {
     const [hasItems, quantity] = useQuantity()
 
-	return(
-
-			<Container>
-            
-                <CartLink to='/'><Cartcontainer1>
-                  
-				      <CartCounter>
+    return (
+        <Container>
+            <CartLink to="/">
+                <Cartcontainer>
+                    <CartCounter>
                         <p>HOME</p>
-				      </CartCounter>
-                  
-                </Cartcontainer1></CartLink>
-                
-                <CartLink to='/cart'><Cartcontainer1>
-                  
-				      <CartCounter>
+                    </CartCounter>
+                </Cartcontainer>
+            </CartLink>
+            <CartLink to="/cart">
+                <Cartcontainer1>
+                    <CartCounter>
                         <p>CART</p>
-				      </CartCounter>
-        
-                  </Cartcontainer1></CartLink>
-                
-               <CartLink to='/cart'> <Cartcontainer2>
-                  
-				      <CartCounter>
-                        <p>({quantity})</p>
-				      </CartCounter>
-                  
-               </Cartcontainer2></CartLink>
-               
-			</Container>
+                    </CartCounter>
+                </Cartcontainer1>
 
-        
-	)
+                <Cartcontainer2>
+                    <CartCounter>
+                        <p>({quantity})</p>
+                    </CartCounter>
+                </Cartcontainer2>
+            </CartLink>
+        </Container>
+    )
 }
 
 export default Footer
