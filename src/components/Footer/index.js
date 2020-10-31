@@ -13,7 +13,6 @@ import {
     Logo,
     Ul,
     Cartcontainer,
-    Cartcontainer1,
     Cartcontainer2,
     Line,
     CartLink,
@@ -37,29 +36,31 @@ const Footer = ({}) => {
 		<Wrapper>
 			<Container>
                 <div>
-                <CartLink to='/'><Cartcontainer>
-                  
+                <Cartcontainer>
+                  <CartLink to='/'>
 				      <CartCounter>
                         <p>Home</p>
 				      </CartCounter>
-                  
-                </Cartcontainer></CartLink>
+                  </CartLink>
+                </Cartcontainer>
 
-                <CartLink to='/'><Cartcontainer1>
-                  
+            
+     
+                <Cartcontainer>
+                  <CartLink to='/cart'>
 				      <CartCounter>
-                        <p>Home</p>
+                        <p>CART</p>
 				      </CartCounter>
-                  
-                </Cartcontainer1></CartLink>
+                  </CartLink>
+                </Cartcontainer>
         
-                <CartLink to='/cart'><Cartcontainer2>
-                  
+                <Cartcontainer2>
+                  <CartLink to='/cart'>
 				      <CartCounter>
                         <p>({quantity})</p>
 				      </CartCounter>
-              
-               </Cartcontainer2></CartLink>
+                  </CartLink>
+               </Cartcontainer2>
                 </div>
 			</Container>
 		</Wrapper>
