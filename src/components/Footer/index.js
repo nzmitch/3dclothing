@@ -14,7 +14,7 @@ import {
     Ul,
     Cartcontainer,
     Cartcontainer2,
-    Cartcontainer1,
+    Line,
     CartLink,
     NavCart,
     windowsLogo,
@@ -36,29 +36,32 @@ const Footer = ({}) => {
 		<Wrapper>
 			<Container>
                 <div>
-                <Cartcontainer>
-                  <CartLink to='/'>
+                <CartLink to='/'><Cartcontainer>
+                  
 				      <CartCounter>
-                        <p>HOME</p>
+                        <p>Home</p>
 				      </CartCounter>
-                  </CartLink>
-                </Cartcontainer>
+                  
+                </Cartcontainer></CartLink>
 
-                <Cartcontainer1>
-                  <CartLink to='/cart'>
+            
+                
+        
+                <CartLink to='/cart'><Cartcontainer>
+                  
 				      <CartCounter>
                         <p>CART</p>
 				      </CartCounter>
-                  </CartLink>
-                </Cartcontainer1>
+                  
+                </Cartcontainer></CartLink>
         
-                <Cartcontainer2>
-                  <CartLink to='/cart'>
+                <CartLink to='/cart'><Cartcontainer2>
+                  
 				      <CartCounter>
                         <p>({quantity})</p>
 				      </CartCounter>
-                  </CartLink>
-               </Cartcontainer2>
+              
+               </Cartcontainer2></CartLink>
                 </div>
 			</Container>
 		</Wrapper>

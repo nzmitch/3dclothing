@@ -27,11 +27,13 @@ export const GlobalStyle = props => (
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         -webkit-tap-highlight-color: rgba(0,0,0,0);
+         -webkit-appearance: none;
       }
       html {
         @font-face {
      
         }
+         -webkit-appearance: none;
          font-family: Roboto;
         -ms-text-size-adjust: 100%;
         -webkit-text-size-adjust: 100%;

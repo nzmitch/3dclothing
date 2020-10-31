@@ -39,23 +39,6 @@ const Navigation = ({ siteTitle }) => {
 		<Wrapper>
 			<Container>
                 
-                
-                <Cartcontainer>
-                  <CartLink to='/cart'>
-                 
-				      <CartCounter>
-                        <p style={{display: 'inlineBlock'}}>CART</p>
-				      </CartCounter>
-				    
-                  </CartLink>
-                  <CartLink to='/cart'>
-                    
-				      <CartCounter>
-                        <p style={{display: 'inlineBlock'}}>({quantity})</p>
-				      </CartCounter>
-				   
-                  </CartLink>
-               </Cartcontainer>
 			</Container>
 		</Wrapper>
         

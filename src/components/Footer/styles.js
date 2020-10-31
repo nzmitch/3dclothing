@@ -24,7 +24,7 @@ export const Container = styled.div`
     justify-content: space-between;
 `
 
-export const Cartcontainer = styled.div`
+export const Cartcontainer = styled(Link)`
     display: inline-block;
     vertical-align: middle;
     background-color: #c0c0c0;
@@ -39,7 +39,7 @@ export const Cartcontainer = styled.div`
     position: relative;
 `
 
-export const Cartcontainer1 = styled.div`
+export const Cartcontainer1 = styled(Link)`
     display: inline-block;
     vertical-align: middle;
     background-color: #c0c0c0;
@@ -54,7 +54,7 @@ export const Cartcontainer1 = styled.div`
     position: relative;
 `
 
-export const Cartcontainer2 = styled.div`
+export const Cartcontainer2 = styled(Link)`
     display: inline-block;
     vertical-align: middle;
     background-color: #c0c0c0;
@@ -90,6 +90,7 @@ export const CartCounter = styled.span`
     position: relative;
     font-size: 1.15em;
     cursor: pointer;
+    
 `
 
 

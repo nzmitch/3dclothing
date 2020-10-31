@@ -50,8 +50,8 @@ const LineItem = props => {
       </p>
       {item.quantity}
       <p>$ {checkout.totalPrice}</p>
-      <button onClick={handleRemove}>Remove</button>
-      <button
+      <button type="button" onClick={handleRemove}>Remove</button>
+      <button type="button"
         onClick={handleCheckout}
         disabled={checkout.lineItems.length === 0}
       >

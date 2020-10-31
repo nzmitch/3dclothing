@@ -38,7 +38,6 @@ const Layout = ({ children }) => {
             <video style={{position: 'fixed', right: '0', top: '0', minwidth: '100%', minHeight: '100%', transform: 'translateX(calc((100% - 100vw) / 2))'}} autoPlay muted loop >
             <source src="https://cdn.glitch.com/c995571b-8b75-4810-b967-1fb1b241a7c2%2FGrid_3D_01.mp4?v=1604035722015" type="video/mp4" />
             </video>
-            <Navbar siteTitle={data.site.siteMetadata.title} />
             <Wrapper>
               {children}
             </Wrapper>
