@@ -50,13 +50,12 @@ const LineItem = props => {
       </p>
       {item.quantity}
       <p>$ {checkout.totalPrice}</p>
+        <div>
       <button css={Button} type="button" onClick={handleRemove}>Remove</button>
-      <button css={Button} type="button"
-        onClick={handleCheckout}
-        disabled={checkout.lineItems.length === 0}
-      >
+      <button css={Button} type="button" onClick={handleCheckout} disabled={checkout.lineItems.length === 0}>
         Check out
       </button>
+      </div>
     </Wrapper>
   )
 } 

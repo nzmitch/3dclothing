@@ -16,12 +16,12 @@ export const Wrapper = styled.div`
 export const Container = styled.div`
     color: white;
     display: flex;
-    justify-content: space-between;
     justify-content: center;
+    flex-direction: column;
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
     top: 0;
-    padding: 1em;
+    width: 100%;
 `

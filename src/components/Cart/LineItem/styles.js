@@ -8,7 +8,11 @@ export const Wrapper = styled.div`
   align-items: center;
   flex-wrap: wrap;
   padding: 2rem 0 2rem 0;
-  width: 40em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; 
+  text-align: center;
 
  
 `
@@ -16,7 +20,7 @@ export const Wrapper = styled.div`
 export const Button = css`
     -webkit-appearance:none;
     opacity: 1;
-
+    margin-left: 0.3em;
     background-color: #c0c0c0;
     border-top: 1px solid #fcfcfc;
     border-left: 1px solid #fcfcfc;
