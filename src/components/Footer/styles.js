@@ -17,7 +17,8 @@ export const Container = styled.div`
     width: 100%;
     height: 3em;
     background-color: #c0c0c0;
-    box-sizing: border-box;
+
+
    
 `
 
@@ -33,7 +34,11 @@ export const Cartcontainer = styled(Link)`
     height: 2.4em;
     margin-left: 0.3em;
     margin-top: 0.3em;
-    position: relative;
+
+    
+    
+
+
 `
 
 export const Cartcontainer1 = styled(Link)`
@@ -48,7 +53,11 @@ export const Cartcontainer1 = styled(Link)`
     height: 2.4em;
     margin-left: 0.3em;
     margin-top: 0.3em;
-    position: relative;
+ 
+
+    
+
+
 `
 
 export const Cartcontainer2 = styled(Link)`
@@ -68,9 +77,12 @@ export const Cartcontainer2 = styled(Link)`
 `
 
 export const CartLink = styled(Link)`
-    text-decoration: none;
+    position: relative;
     text-align: center;
-    line-height: 0.4em;   
+    display: inline-block;
+
+    
+     
 `
 
 export const CartCounter = styled.span`

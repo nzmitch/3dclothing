@@ -43,43 +43,27 @@ const Footer = ({}) => {
                 </Cartcontainer>
             </CartLink>
         
-            <CartLink to="/">
+            <CartLink style={{display: 'none'}} to="/">
                 <Cartcontainer>
                     <CartCounter>
                         <p>HOME</p>
                     </CartCounter>
                 </Cartcontainer>
             </CartLink>
-            <CartLink to="/">
-                <Cartcontainer>
+        
+            <CartLink to="/cart">
+                <Cartcontainer1>
                     <CartCounter>
-                        <p>HOME</p>
+                        <p>CART</p>
                     </CartCounter>
-                </Cartcontainer>
-            </CartLink>
-            <CartLink to="/">
-                <Cartcontainer>
+                </Cartcontainer1>
+
+                <Cartcontainer2>
                     <CartCounter>
-                        <p>HOME</p>
+                        <p>({quantity})</p>
                     </CartCounter>
-                </Cartcontainer>
+                </Cartcontainer2>
             </CartLink>
-            <CartLink to="/">
-                <Cartcontainer>
-                    <CartCounter>
-                        <p>HOME</p>
-                    </CartCounter>
-                </Cartcontainer>
-            </CartLink>
-            <CartLink to="/">
-                <Cartcontainer>
-                    <CartCounter>
-                        <p>HOME</p>
-                    </CartCounter>
-                </Cartcontainer>
-            </CartLink>
-            
-       
         </Container>
     )
 }
