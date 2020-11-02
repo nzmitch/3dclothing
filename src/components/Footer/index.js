@@ -27,14 +27,14 @@ const Footer = ({}) => {
     return (
         <>
         <Container>
-            <Cartcontainer>
-                <MenuLink to="/" >HOME</MenuLink>
+            <Cartcontainer to="/" >
+                <MenuLink>HOME</MenuLink>
             </Cartcontainer>
-            <Cartcontainer1>
-                <MenuLink to="/cart" >CART</MenuLink>
+            <Cartcontainer1 to="/cart" >
+                <MenuLink>CART</MenuLink>
             </Cartcontainer1>
-            <Cartcontainer2>
-                <MenuLink to="/cart" >({quantity})</MenuLink>
+            <Cartcontainer2 to="/cart" >
+                <MenuLink>({quantity})</MenuLink>
             </Cartcontainer2>
         </Container>
         </>

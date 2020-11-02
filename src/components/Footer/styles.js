@@ -18,7 +18,7 @@ export const Container = styled.div`
     display: flex;
 `
 
-export const Cartcontainer = styled.div`
+export const Cartcontainer = styled(Link)`
     width: 8em;
     height: 2.3em;
     border-top: solid white 1px;
@@ -30,10 +30,11 @@ export const Cartcontainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 `
 
 
-export const Cartcontainer1 = styled.div`
+export const Cartcontainer1 = styled(Link)`
     width: 6em;
     height: 2.3em;
     border-top: solid white 1px;
@@ -45,10 +46,11 @@ export const Cartcontainer1 = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 `
 
 
-export const Cartcontainer2 = styled.div`
+export const Cartcontainer2 = styled(Link)`
     width: 2.3em;
     height: 2.3em;
     border-top: solid white 1px;
@@ -60,6 +62,7 @@ export const Cartcontainer2 = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 `
 
 export const MenuLink = styled(Link)`

@@ -15,15 +15,15 @@ export const sizeSelect = css`
     position: relative;
 `
 export const buyButton = css`
-    width: 14em;
-    height: 3em;
+    width: 13em;
+    height: 2.8em;
     background-color: #c0c0c0;
     border-top: white solid 1px;
     border-left: white solid 1px;
     border-right: black solid 1px;
     border-bottom: black solid 1px;
     color: 696969;
-    font-size: 1em;
+    font-size: 1.1em;
     cursor: pointer;
     position: relative;
     @font-face {
