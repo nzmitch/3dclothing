@@ -9,88 +9,62 @@ export const breakpoints = {
     xl: 1200,
 }
 
-
-
 export const Container = styled.div`
     position: fixed;
     bottom: 0;
     width: 100%;
     height: 3em;
     background-color: #c0c0c0;
-
-
-   
+    display: flex;
 `
 
-export const Cartcontainer = styled(Link)`
-    display: inline-block;
-    vertical-align: middle;
-    background-color: #c0c0c0;
-    border-top: 1px solid #fcfcfc;
-    border-left: 1px solid #fcfcfc;
-    border-bottom: 1.1px solid #2c2c2c;
-    border-right: 1.1px solid #2c2c2c;
+export const Cartcontainer = styled.div`
     width: 8em;
-    height: 2.4em;
+    height: 2.3em;
+    border-top: solid white 1px;
+    border-left: solid white 1px;
+    border-bottom: solid black 1px;
+    border-right: solid black 1px;
+    margin-top: 0.3em;
     margin-left: 0.3em;
-    margin-top: 0.3em;
-
-    
-    
-
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
 
-export const Cartcontainer1 = styled(Link)`
-    display: inline-block;
-    vertical-align: middle;
-    background-color: #c0c0c0;
-    border-top: 1px solid #fcfcfc;
-    border-left: 1px solid #fcfcfc;
-    border-bottom: 1.1px solid #2c2c2c;
-    border-right: 1.1px solid #2c2c2c;
-    width: 5em;
-    height: 2.4em;
+
+export const Cartcontainer1 = styled.div`
+    width: 6em;
+    height: 2.3em;
+    border-top: solid white 1px;
+    border-left: solid white 1px;
+    border-bottom: solid black 1px;
+    border-right: solid black 1px;
+    margin-top: 0.3em;
     margin-left: 0.3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
+
+export const Cartcontainer2 = styled.div`
+    width: 2.3em;
+    height: 2.3em;
+    border-top: solid white 1px;
+    border-left: solid white 1px;
+    border-bottom: solid black 1px;
+    border-right: solid black 1px;
     margin-top: 0.3em;
- 
-
-    
-
-
+    margin-left: 0.3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
 
-export const Cartcontainer2 = styled(Link)`
-    display: inline-block;
-    vertical-align: middle;
-    background-color: #c0c0c0;
-    border-top: 1px solid #fcfcfc;
-    border-left: 1px solid #fcfcfc;
-    border-bottom: 1.1px solid #2c2c2c;
-    border-right: 1.1px solid #2c2c2c;
-    width: 2.4em;
-    height: 2.4em;
-    margin-right: 0.3em;
-    margin-top: 0.3em;
-    position: relative;
-
-`
-
-export const CartLink = styled(Link)`
-    position: relative;
-    text-align: center;
-    display: inline-block;
-
-    
-     
-`
-
-export const CartCounter = styled.span`
-    vertical-align: middle;
-    font-weight: 400;
+export const MenuLink = styled(Link)`
     color: black;
-    position: relative;
-    font-size: 1.15em;
-    cursor: pointer;
-    
+    text-decoration: none;
+    font-size: 1.1em;
+    display: inline-block;
 `
