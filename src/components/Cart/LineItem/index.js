@@ -49,7 +49,7 @@ const LineItem = props => {
         {item.variant.title === !'Default Title' ? item.variant.title : ''}
       </p>
       {item.quantity}
-      <p>$ {checkout.totalPrice}</p>
+      <p>$ {checkout.subtotalPrice}</p>
         <div>
       <button css={Button} type="button" onClick={handleRemove}>Remove</button>
       <button css={Button} type="button" onClick={handleCheckout} disabled={checkout.lineItems.length === 0}>
